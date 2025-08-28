@@ -73,7 +73,7 @@ export function Header() {
               {/* Language Selector */}
               <Select
                 value={locale}
-                onValueChange={(value) => setLocale(value)}
+                onValueChange={(value) => setLocale(value as typeof locale)}
               >
                 <SelectTrigger className="w-[130px] bg-background/50 hover:bg-background border-border transition-all duration-200 group">
                   <div className="flex items-center">
@@ -86,22 +86,23 @@ export function Header() {
                   className="bg-background border-border"
                   align={locale === "ar" ? "end" : "start"}
                 >
-                  {Object.entries(languageOptions).map(
-                    ([key, { name, flag }]) => (
-                      <SelectItem
-                        key={key}
-                        value={key}
-                        className="focus:bg-primary/10 transition-colors duration-150 hover:text-foreground"
-                      >
-                        <span className="me-2 rtl:ms-2 rtl:me-0">{name}</span>
-                      </SelectItem>
-                    )
-                  )}
+                  {Object.entries(languageOptions).map(([key, { name }]) => (
+                    <SelectItem
+                      key={key}
+                      value={key}
+                      className="focus:bg-primary/10 transition-colors duration-150 hover:text-foreground"
+                    >
+                      <span className="me-2 rtl:ms-2 rtl:me-0">{name}</span>
+                    </SelectItem>
+                  ))}
                 </SelectContent>
               </Select>
 
               {/* Theme Selector */}
-              <Select value={theme} onValueChange={(value) => setTheme(value)}>
+              <Select
+                value={theme}
+                onValueChange={(value) => setTheme(value as typeof theme)}
+              >
                 <SelectTrigger className="w-[130px] bg-background/50 hover:bg-background border-border transition-all duration-200 group">
                   {themeIcon[theme as keyof typeof themeIcon]}
                   <SelectValue className="group-hover:text-foreground" />
@@ -137,7 +138,7 @@ export function Header() {
               {/* Language Selector */}
               <Select
                 value={locale}
-                onValueChange={(value) => setLocale(value)}
+                onValueChange={(value) => setLocale(value as typeof locale)}
               >
                 <SelectTrigger className="w-12 h-12 p-0 bg-background/50 hover:bg-background border-border rounded-lg transition-all duration-200 flex items-center justify-center">
                   <Globe className="h-5 w-5" />
@@ -146,22 +147,23 @@ export function Header() {
                   className="bg-background border-border"
                   align={locale === "ar" ? "end" : "start"}
                 >
-                  {Object.entries(languageOptions).map(
-                    ([key, { name, flag }]) => (
-                      <SelectItem
-                        key={key}
-                        value={key}
-                        className="focus:bg-primary/10 transition-colors duration-150 hover:text-foreground"
-                      >
-                        <span className="me-2 rtl:ms-2 rtl:me-0">{name}</span>
-                      </SelectItem>
-                    )
-                  )}
+                  {Object.entries(languageOptions).map(([key, { name }]) => (
+                    <SelectItem
+                      key={key}
+                      value={key}
+                      className="focus:bg-primary/10 transition-colors duration-150 hover:text-foreground"
+                    >
+                      <span className="me-2 rtl:ms-2 rtl:me-0">{name}</span>
+                    </SelectItem>
+                  ))}
                 </SelectContent>
               </Select>
 
               {/* Theme Selector */}
-              <Select value={theme} onValueChange={(value) => setTheme(value)}>
+              <Select
+                value={theme}
+                onValueChange={(value) => setTheme(value as typeof theme)}
+              >
                 <SelectTrigger className="w-12 h-12 p-0 bg-background/50 hover:bg-background border-border rounded-lg transition-all duration-200 flex items-center justify-center">
                   {themeIcon[theme as keyof typeof themeIcon]}
                 </SelectTrigger>

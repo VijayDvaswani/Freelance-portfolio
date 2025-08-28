@@ -5,6 +5,9 @@ import { Header } from "@/components/layout/Header";
 import { Hero } from "@/components/sections/Hero";
 import { Skills } from "@/components/sections/Skills";
 import { TestLab } from "@/components/sections/TestLab";
+import { Project } from "@/components/sections/Project";
+import { Contact } from "@/components/sections/Contact";
+import { Footer } from "@/components/layout/Footer";
 
 const Index = () => {
   return (
@@ -15,8 +18,11 @@ const Index = () => {
           <main>
             <Hero />
             <Skills />
+            <Project />
             <TestLab />
+            <Contact />
           </main>
+          <Footer />
         </div>
       </I18nProvider>
     </ThemeProvider>

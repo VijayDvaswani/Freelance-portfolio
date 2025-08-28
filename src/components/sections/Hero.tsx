@@ -50,11 +50,11 @@ export function Hero() {
         <div className="w-6 h-6 bg-secondary/30 rounded-full"></div>
       </div>
 
-      <div className="container mx-auto px-6 text-center relative z-10">
-        <div className="max-w-4xl mx-auto">
+      <div className="container mx-auto px-6 mt-20 md:mt-6 text-center relative z-10">
+        <div className="max-w-7xl mx-auto">
           {/* Badge with animation */}
           <div
-            className={`inline-flex items-center px-4 py-2 rounded-full bg-surface border border-card-border mb-8 transform transition-all duration-1000 ${
+            className={`inline-flex items-center px-4 py-2 rounded-full bg-surface border border-card-border mb-3 transform transition-all duration-1000 ${
               isVisible
                 ? "translate-y-0 opacity-100"
                 : "translate-y-10 opacity-0"
@@ -68,7 +68,7 @@ export function Hero() {
 
           {/* Main heading with animation */}
           <h1
-            className={`text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight transform transition-all duration-1000 delay-150 ${
+            className={`text-3xl md:text-6xl lg:text-7xl font-bold leading-tight max-w-5xl mx-auto transform transition-all duration-1000 delay-150 ${
               isVisible
                 ? "translate-y-0 opacity-100"
                 : "translate-y-10 opacity-0"
@@ -79,114 +79,84 @@ export function Hero() {
             </span>
           </h1>
 
-          {/* Description with animation */}
-          <p
-            className={`text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed transform transition-all duration-1000 delay-300 ${
-              isVisible
-                ? "translate-y-0 opacity-100"
-                : "translate-y-10 opacity-0"
-            }`}
-          >
-            {t("hero.description")}
-          </p>
-
-          {/* CTA Buttons with animation */}
-          {/* <div
-            className={`flex flex-col sm:flex-row gap-4 justify-center transform transition-all duration-1000 delay-500 ${
-              isVisible
-                ? "translate-y-0 opacity-100"
-                : "translate-y-10 opacity-0"
-            }`}
-          >
-            <Button
-              size="lg"
-              className="bg-gradient-primary hover:shadow-glow transition-all duration-300 group"
-            >
-              <span>{t("hero.cta.projects")}</span>
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-card-border bg-surface/50 hover:bg-surface-hover group"
-            >
-              <Play className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
-              {t("hero.cta.testlab")}
-            </Button>
-          </div> */}
-
-          {/* Additional CTAs with animation */}
+          {/* Profile Boxes Section */}
           <div
-            className={`flex flex-wrap justify-center gap-3 mt-6 transform transition-all duration-1000 delay-700 ${
+            className={`grid grid-cols-1  mb-6 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-12 transform transition-all duration-1000 delay-700 ${
               isVisible
                 ? "translate-y-0 opacity-100"
                 : "translate-y-10 opacity-0"
             }`}
           >
-            <a
-              href="https://fiverr.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center px-4 py-2 rounded-full bg-surface border border-card-border text-sm font-medium hover:bg-surface-hover transition-all duration-300 group"
-            >
-              💼 Hire Me on Fiverr
-              <ExternalLink className="ml-2 h-4 w-4 group-hover:translate-x-0.5 transition-transform" />
-            </a>
-
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center px-4 py-2 rounded-full bg-surface border border-card-border text-sm font-medium hover:bg-surface-hover transition-all duration-300 group"
-            >
-              🔗 Connect on LinkedIn
-              <ExternalLink className="ml-2 h-4 w-4 group-hover:translate-x-0.5 transition-transform" />
-            </a>
-
-            <a
-              href="#portfolio"
-              className="inline-flex items-center px-4 py-2 rounded-full bg-surface border border-card-border text-sm font-medium hover:bg-surface-hover transition-all duration-300 group"
-            >
-              🎨 View My Portfolio
-              <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-0.5 transition-transform" />
-            </a>
-          </div>
-
-          {/* Stats with animation */}
-          <div
-            className={`grid grid-cols-3 md:grid-cols-3 gap-8 mt-16 max-w-2xl mx-auto transform transition-all duration-1000 delay-900 ${
-              isVisible
-                ? "translate-y-0 opacity-100"
-                : "translate-y-10 opacity-0"
-            }`}
-          >
-            <div className="text-center group">
-              <div className="text-3xl font-bold text-primary flex items-center justify-center">
-                <Zap className="h-6 w-6 mr-2 group-hover:scale-110 transition-transform" />
-                500+
+            {/* Fiverr Card */}
+            <div className="flex flex-col justify-between rounded-3xl border border-card-border bg-surface p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+              <div className="flex flex-col items-center text-center">
+                <div className="w-16 h-16 rounded-full bg-green-500/20 flex items-center justify-center mb-6">
+                  <span className="text-2xl">💼</span>
+                </div>
+                <h3 className="text-2xl font-bold text-primary mb-4">
+                  Hire Me on Fiverr
+                </h3>
+                <p className="text-base text-muted-foreground leading-relaxed">
+                  SQA Engineer with rapid delivery
+                </p>
               </div>
-              <div className="text-sm text-muted-foreground mt-2">
-                Tests Automated
-              </div>
+              <a
+                href="https://www.fiverr.com/s/kLZ2dLw"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-8 inline-flex items-center justify-center text-base font-medium text-accent hover:underline py-3 px-6 rounded-xl bg-accent/5 hover:bg-accent/10 transition-colors duration-300"
+              >
+                <ExternalLink className="mr-2 h-5 w-5" />
+                View Profile
+              </a>
             </div>
-            <div className="text-center group">
-              <div className="text-3xl font-bold text-secondary flex items-center justify-center">
-                <TrendingUp className="h-6 w-6 mr-2 group-hover:scale-110 transition-transform" />
-                99.9%
+
+            {/* Upwork Card */}
+            <div className="flex flex-col justify-between rounded-3xl border border-card-border bg-surface p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+              <div className="flex flex-col items-center text-center">
+                <div className="w-16 h-16 rounded-full bg-purple-500/20 flex items-center justify-center mb-6">
+                  <span className="text-2xl">🧳</span>
+                </div>
+                <h3 className="text-2xl font-bold text-primary mb-4">
+                  View My Upwork Profile
+                </h3>
+                <p className="text-base text-muted-foreground leading-relaxed">
+                  SQA Engineer for enterprise-grade applications
+                </p>
               </div>
-              <div className="text-sm text-muted-foreground mt-2">
-                Bug Detection Rate
-              </div>
+              <a
+                href="https://www.upwork.com/freelancers/vijaykumar2041"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-8 inline-flex items-center justify-center text-base font-medium text-accent hover:underline py-3 px-6 rounded-xl bg-accent/5 hover:bg-accent/10 transition-colors duration-300"
+              >
+                <ExternalLink className="mr-2 h-5 w-5" />
+                View Profile
+              </a>
             </div>
-            <div className="text-center group">
-              <div className="text-3xl font-bold text-accent flex items-center justify-center">
-                <Star className="h-6 w-6 mr-2 group-hover:scale-110 transition-transform" />
-                50+
+
+            {/* LinkedIn Card */}
+            <div className="flex flex-col justify-between rounded-3xl border border-card-border bg-surface p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+              <div className="flex flex-col items-center text-center">
+                <div className="w-16 h-16 rounded-full bg-blue-500/20 flex items-center justify-center mb-6">
+                  <span className="text-2xl">🌐</span>
+                </div>
+                <h3 className="text-2xl font-bold text-primary mb-4">
+                  Connect on LinkedIn
+                </h3>
+                <p className="text-base text-muted-foreground leading-relaxed">
+                  SQA Engineer passionate about quality assurance
+                </p>
               </div>
-              <div className="text-sm text-muted-foreground mt-2">
-                Projects Delivered
-              </div>
+              <a
+                href="http://www.linkedin.com/in/vijaykumarvaswani"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-8 inline-flex items-center justify-center text-base font-medium text-accent hover:underline py-3 px-6 rounded-xl bg-accent/5 hover:bg-accent/10 transition-colors duration-300"
+              >
+                <ExternalLink className="mr-2 h-5 w-5" />
+                View Profile
+              </a>
             </div>
           </div>
         </div>
