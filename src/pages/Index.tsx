@@ -1,10 +1,10 @@
-import React from 'react';
-import { ThemeProvider } from '@/contexts/ThemeContext';
-import { I18nProvider } from '@/contexts/I18nContext';
-import { Header } from '@/components/layout/Header';
-import { Hero } from '@/components/sections/Hero';
-import { Skills } from '@/components/sections/Skills';
-import { TestLab } from '@/components/sections/TestLab';
+import React from "react";
+import { ThemeProvider } from "@/contexts/ThemeContext";
+import { I18nProvider } from "@/contexts/I18nContext";
+import { Header } from "@/components/layout/Header";
+import { Hero } from "@/components/sections/Hero";
+import { Skills } from "@/components/sections/Skills";
+import { TestLab } from "@/components/sections/TestLab";
 
 const Index = () => {
   return (
