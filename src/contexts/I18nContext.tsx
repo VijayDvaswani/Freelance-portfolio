@@ -31,7 +31,7 @@ const translations = {
     "hero.cta.testlab": "Open Test Lab",
 
     // Skills Section
-    "skills.title": "Expert QA Services",
+    "skills.title": "Our Services",
     "skills.subtitle": "Comprehensive Quality Assurance Solutions",
     "skills.badge": "My Skills",
 
@@ -236,6 +236,56 @@ const translations = {
     "footer.madeWith": "Made with",
     "footer.by": "by",
     "footer.backToTop": "Back to top",
+
+    "testimonials.badge": "Client Feedback",
+    "testimonials.title": "Client Testimonials",
+    "testimonials.subtitle": "What clients say about working with me",
+    "testimonials.previous": "Previous testimonial",
+    "testimonials.next": "Next testimonial",
+    "testimonials.goTo": "Go to testimonial",
+
+    // Testimonial content
+    "testimonials.1.name": "Muhammad A.",
+    "testimonials.1.role": "Client",
+    "testimonials.1.content":
+      "Vijay is an exceptional developer. He delivered a high-quality e-commerce website that exceeded my expectations. His attention to detail and communication throughout the project were outstanding.",
+    "testimonials.1.project": "E-commerce Website Development",
+    "testimonials.1.date": "December 2023",
+
+    "testimonials.2.name": "Sarah T.",
+    "testimonials.2.role": "Client",
+    "testimonials.2.content":
+      "Working with Vijay was a pleasure. He transformed our outdated website into a modern, responsive platform that perfectly represents our brand. His technical expertise and creative solutions were impressive.",
+    "testimonials.2.project": "Website Redesign",
+    "testimonials.2.date": "November 2023",
+
+    "testimonials.3.name": "James K.",
+    "testimonials.3.role": "Client",
+    "testimonials.3.content":
+      "Vijay developed a custom web application for our business that has significantly improved our workflow efficiency. He was professional, met all deadlines, and provided excellent post-launch support.",
+    "testimonials.3.project": "Custom Web Application",
+    "testimonials.3.date": "October 2023",
+
+    "testimonials.4.name": "Lisa M.",
+    "testimonials.4.role": "Client",
+    "testimonials.4.content":
+      "I hired Vijay for a complex React project and he delivered beyond my expectations. His code is clean, well-documented, and he implemented all requested features perfectly. Highly recommended!",
+    "testimonials.4.project": "React Application Development",
+    "testimonials.4.date": "September 2023",
+
+    "testimonials.5.name": "Robert D.",
+    "testimonials.5.role": "Client",
+    "testimonials.5.content":
+      "Vijay's expertise in frontend development is evident in the beautiful interfaces he creates. He took our vague ideas and turned them into a stunning, user-friendly website that our customers love.",
+    "testimonials.5.project": "Frontend Development",
+    "testimonials.5.date": "August 2023",
+
+    "testimonials.6.name": "Emily W.",
+    "testimonials.6.role": "Client",
+    "testimonials.6.content":
+      "Outstanding work on our dashboard project! Vijay created an intuitive admin panel with beautiful data visualizations. His communication was excellent throughout the project lifecycle.",
+    "testimonials.6.project": "Dashboard Development",
+    "testimonials.6.date": "July 2023",
   },
 
   es: {
@@ -257,7 +307,7 @@ const translations = {
     "hero.cta.testlab": "Abrir Lab de Pruebas",
 
     // Skills Section
-    "skills.title": "Servicios Expertos de QA",
+    "skills.title": "Nuestros Servicios",
     "skills.subtitle": "Soluciones Integrales de Aseguramiento de Calidad",
     "skills.badge": "Mis Habilidades",
 
@@ -473,6 +523,56 @@ const translations = {
     "footer.madeWith": "Hecho con",
     "footer.by": "por",
     "footer.backToTop": "Volver arriba",
+
+    "testimonials.badge": "Comentarios de Clientes",
+    "testimonials.title": "Testimonios de Clientes",
+    "testimonials.subtitle": "Lo que los clientes dicen sobre trabajar conmigo",
+    "testimonials.previous": "Testimonio anterior",
+    "testimonials.next": "Siguiente testimonio",
+    "testimonials.goTo": "Ir al testimonio",
+
+    // Testimonial content
+    "testimonials.1.name": "Muhammad A.",
+    "testimonials.1.role": "Cliente",
+    "testimonials.1.content":
+      "Vijay es un desarrollador excepcional. Entregó un sitio web de comercio electrónico de alta calidad que superó mis expectativas. Su atención al detalle y comunicación durante todo el proyecto fueron sobresalientes.",
+    "testimonials.1.project": "Desarrollo de Sitio Web de Comercio Electrónico",
+    "testimonials.1.date": "Diciembre 2023",
+
+    "testimonials.2.name": "Sarah T.",
+    "testimonials.2.role": "Cliente",
+    "testimonials.2.content":
+      "Trabajar con Vijay fue un placer. Transformó nuestro sitio web obsoleto en una plataforma moderna y receptiva que representa perfectamente nuestra marca. Su experiencia técnica y soluciones creativas fueron impresionantes.",
+    "testimonials.2.project": "Rediseño de Sitio Web",
+    "testimonials.2.date": "Noviembre 2023",
+
+    "testimonials.3.name": "James K.",
+    "testimonials.3.role": "Cliente",
+    "testimonials.3.content":
+      "Vijay desarrolló una aplicación web personalizada para nuestro negocio que ha mejorado significativamente nuestra eficiencia de flujo de trabajo. Fue profesional, cumplió con todos los plazos y brindó un excelente soporte posterior al lanzamiento.",
+    "testimonials.3.project": "Aplicación Web Personalizada",
+    "testimonials.3.date": "Octubre 2023",
+
+    "testimonials.4.name": "Lisa M.",
+    "testimonials.4.role": "Cliente",
+    "testimonials.4.content":
+      "Contraté a Vijay para un proyecto complejo de React y entregó más de lo que esperaba. Su código es limpio, está bien documentado e implementó todas las funciones solicitadas perfectamente. ¡Muy recomendable!",
+    "testimonials.4.project": "Desarrollo de Aplicación React",
+    "testimonials.4.date": "Septiembre 2023",
+
+    "testimonials.5.name": "Robert D.",
+    "testimonials.5.role": "Cliente",
+    "testimonials.5.content":
+      "La experiencia de Vijay en desarrollo frontend es evidente en las hermosas interfaces que crea. Tomó nuestras ideas vagas y las convirtió en un sitio web impresionante y fácil de usar que nuestros clientes adoran.",
+    "testimonials.5.project": "Desarrollo Frontend",
+    "testimonials.5.date": "Agosto 2023",
+
+    "testimonials.6.name": "Emily W.",
+    "testimonials.6.role": "Cliente",
+    "testimonials.6.content":
+      "¡Un trabajo excepcional en nuestro proyecto de panel de control! Vijay creó un panel de administración intuitivo con hermosas visualizaciones de datos. Su comunicación fue excelente durante todo el ciclo de vida del proyecto.",
+    "testimonials.6.project": "Desarrollo de Panel de Control",
+    "testimonials.6.date": "Julio 2023",
   },
 
   ar: {
@@ -494,7 +594,7 @@ const translations = {
     "hero.cta.testlab": "فتح مختبر الاختبار",
 
     // Skills Section
-    "skills.title": "خدمات ضمان الجودة المتخصصة",
+    "skills.title": "خدماتنا",
     "skills.subtitle": "حلول شاملة لضمان الجودة",
     "skills.badge": "مهاراتي",
 
@@ -679,6 +779,56 @@ const translations = {
     "footer.madeWith": "صنع بـ",
     "footer.by": "بواسطة",
     "footer.backToTop": "العودة إلى الأعلى",
+
+    "testimonials.badge": "تعليقات العملاء",
+    "testimonials.title": "شهادات العملاء",
+    "testimonials.subtitle": "ما يقوله العملاء عن العمل معي",
+    "testimonials.previous": "الشهادة السابقة",
+    "testimonials.next": "الشهادة التالية",
+    "testimonials.goTo": "انتقل إلى الشهادة",
+
+    // Testimonial content
+    "testimonials.1.name": "محمد أ.",
+    "testimonials.1.role": "عميل",
+    "testimonials.1.content":
+      "فيجاي مطور استثنائي. قدم موقعًا إلكترونيًا للتجارة الإلكترونية عالي الجودة تجاوز توقعاتي. كانت عنايته بالتفاصيل وتواصله طوال المشروع استثنائية.",
+    "testimonials.1.project": "تطوير موقع تجارة إلكترونية",
+    "testimonials.1.date": "ديسمبر 2023",
+
+    "testimonials.2.name": "سارة ت.",
+    "testimonials.2.role": "عميل",
+    "testimonials.2.content":
+      "كان العمل مع فيجاي متعة. حول موقعنا الإلكتروني القديم إلى منصة حديثة وسريعة الاستجابة تمثل علامتنا التجارية بشكل مثالي. كانت خبرته التقنية وحلوله الإبداعية مذهلة.",
+    "testimonials.2.project": "إعادة تصميم الموقع الإلكتروني",
+    "testimonials.2.date": "نوفمبر 2023",
+
+    "testimonials.3.name": "جيمس ك.",
+    "testimonials.3.role": "عميل",
+    "testimonials.3.content":
+      "طور فيجاي تطبيق ويب مخصص لأعمالنا مما حسن بشكل كبير كفاءة سير العمل لدينا. كان محترفًا ولبى جميع المواعيد النهائية وقدم دعمًا ممتازًا بعد الإطلاق.",
+    "testimonials.3.project": "تطبيق ويب مخصص",
+    "testimonials.3.date": "أكتوبر 2023",
+
+    "testimonials.4.name": "ليزا م.",
+    "testimonials.4.role": "عميل",
+    "testimonials.4.content":
+      "وظفت فيجاي لمشروع React معقد وقد تجاوز توقعاتي. كوده نظيف وموثق جيدًا ونفذ جميع الميزات المطلوبة بشكل مثالي. موصى به بشدة!",
+    "testimonials.4.project": "تطوير تطبيق React",
+    "testimonials.4.date": "سبتمبر 2023",
+
+    "testimonials.5.name": "روبرت د.",
+    "testimonials.5.role": "عميل",
+    "testimonials.5.content":
+      "تظهر خبرة فيجاي في تطوير الواجهة الأمامية في الواجهات الجميلة التي يصممها. أخذ أفكارنا الغامضة وحولها إلى موقع إلكتروني مذهل وسهل الاستخدام يحبه عملاؤنا.",
+    "testimonials.5.project": "تطوير الواجهة الأمامية",
+    "testimonials.5.date": "أغسطس 2023",
+
+    "testimonials.6.name": "إيميلي و.",
+    "testimonials.6.role": "عميل",
+    "testimonials.6.content":
+      "عمل استثنائي في مشروع لوحة التحكم لدينا! أنشأ فيجاي لوحة إدارة بديهية مع تصورات بيانات جميلة. كان تواصله ممتازًا طوال دورة حياة المشروع.",
+    "testimonials.6.project": "تطوير لوحة التحكم",
+    "testimonials.6.date": "يوليو 2023",
   },
 };
 

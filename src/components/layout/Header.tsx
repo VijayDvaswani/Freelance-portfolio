@@ -63,7 +63,7 @@ export function Header() {
                   <TestTube2 className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                  QA Lab
+                  VIJAY KUMAR
                 </div>
               </div>
             </div>

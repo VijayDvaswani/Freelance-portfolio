@@ -40,7 +40,7 @@ export function Footer() {
           {/* Brand/Description */}
           <div className="lg:col-span-1">
             <h3 className="text-2xl font-bold bg-gradient-hero bg-clip-text text-transparent mb-4">
-              SQA Engineer
+              VIJAY KUMAR
             </h3>
             <p className="text-muted-foreground mb-6">
               {t("footer.description")}

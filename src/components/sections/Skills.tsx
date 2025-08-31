@@ -173,7 +173,7 @@ export function Skills() {
 
                   <div className="mt-auto">
                     <h4 className="text-sm font-semibold text-foreground/90 mb-4 tracking-wide uppercase">
-                    {t("skills.tech")}
+                      {t("skills.tech")}
                     </h4>
                     <ul className="space-y-3">
                       {Array.isArray(skill.tools) &&
@@ -208,22 +208,22 @@ export function Skills() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8" dir={dir}>
             {[
               {
-                value: "100%",
+                value: "95%",
                 label: t("skills.stats.1"),
                 color: "text-primary",
               },
               {
-                value: "500+",
+                value: "100+",
                 label: t("skills.stats.2"),
                 color: "text-secondary",
               },
               {
-                value: "99.9%",
+                value: "90%",
                 label: t("skills.stats.3"),
                 color: "text-accent",
               },
               {
-                value: "50+",
+                value: "40+",
                 label: t("skills.stats.4"),
                 color: "text-purple-500",
               },

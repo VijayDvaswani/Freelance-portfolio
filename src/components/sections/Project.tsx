@@ -259,7 +259,7 @@ export function Project() {
       <div className="container mx-auto px-6 relative z-10">
         <div
           className={`text-center mb-16 ${
-            dir === "rtl" ? "text-right" : "text-left"
+            dir === "rtl" ? "text-center" : "text-left"
           }`}
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
@@ -383,7 +383,7 @@ export function Project() {
               <Button
                 onClick={showLess}
                 variant="outline"
-                className="rounded-full px-6 py-2 border-accent text-accent hover:bg-accent/10 transition-colors duration-300"
+                className="rounded-full px-6 py-2 border-accent text-black hover:bg-accent/10 hover:text-black transition-colors duration-300"
               >
                 {t("projects.showLess")}
                 <ChevronUp
@@ -400,7 +400,7 @@ export function Project() {
             {t("projects.cta")}
           </p>
           <Button className="rounded-full px-8 py-3 text-base font-medium bg-accent hover:bg-accent/90 transition-colors duration-300">
-            {t("nav.contact")}
+           <a href="#contact"> {t("nav.contact")}</a>
             <ArrowRight
               className={`h-5 w-5 ${
                 dir === "rtl" ? "mr-2 rotate-180" : "ml-2"
