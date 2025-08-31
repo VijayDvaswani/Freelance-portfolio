@@ -119,7 +119,7 @@ export function Contact() {
                     <h4 className="font-semibold text-foreground">
                       {t("contact.email")}
                     </h4>
-                    <p className="text-muted-foreground">hello@example.com</p>
+                    <p className="text-muted-foreground">vijay.dvaswani@gmail.com</p>
                     <p className="text-sm text-muted-foreground mt-1 flex items-center">
                       <Clock className="h-4 w-4 mr-1" />
                       {t("contact.responseTime")}
@@ -136,7 +136,7 @@ export function Contact() {
                     <h4 className="font-semibold text-foreground">
                       {t("contact.phone")}
                     </h4>
-                    <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                    <p className="text-muted-foreground">+92-3332532999</p>
                   </div>
                 </div>
 
@@ -149,7 +149,7 @@ export function Contact() {
                     <h4 className="font-semibold text-foreground">
                       {t("contact.location")}
                     </h4>
-                    <p className="text-muted-foreground">San Francisco, CA</p>
+                    <p className="text-muted-foreground">Karachi, Pakistan</p>
                   </div>
                 </div>
               </div>

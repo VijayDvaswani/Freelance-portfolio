@@ -174,17 +174,19 @@ export function Footer() {
               <li className={`flex items-start ${flexDirectionClass}`}>
                 <Mail className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
                 <div className={marginDirectionClass} />
-                <span className="text-muted-foreground">hello@example.com</span>
+                <span className="text-muted-foreground">
+                  vijay.dvaswani@gmail.com
+                </span>
               </li>
               <li className={`flex items-start ${flexDirectionClass}`}>
                 <Phone className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
                 <div className={marginDirectionClass} />
-                <span className="text-muted-foreground">+1 (555) 123-4567</span>
+                <span className="text-muted-foreground">+92-3332532999</span>
               </li>
               <li className={`flex items-start ${flexDirectionClass}`}>
                 <MapPin className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
                 <div className={marginDirectionClass} />
-                <span className="text-muted-foreground">San Francisco, CA</span>
+                <span className="text-muted-foreground">Karachi, Pakistan</span>
               </li>
             </ul>
           </div>
