@@ -90,7 +90,7 @@ export function Header() {
                     <SelectItem
                       key={key}
                       value={key}
-                      className="focus:bg-primary/10 transition-colors duration-150 hover:text-foreground"
+                      className="focus:bg-primary/10 transition-colors duration-150 hover:text-black dark:hover:text-white"
                     >
                       <span className="me-2 rtl:ms-2 rtl:me-0">{name}</span>
                     </SelectItem>
@@ -113,19 +113,19 @@ export function Header() {
                 >
                   <SelectItem
                     value="light"
-                    className="focus:bg-primary/10 transition-colors duration-150 hover:text-foreground"
+                    className="focus:bg-primary/10 transition-colors duration-150 hover:text-black dark:hover:text-white"
                   >
                     Light
                   </SelectItem>
                   <SelectItem
                     value="dark"
-                    className="focus:bg-primary/10 transition-colors duration-150 hover:text-foreground"
+                    className="focus:bg-primary/10 transition-colors duration-150 hover:text-black dark:hover:text-white"
                   >
                     Dark
                   </SelectItem>
                   <SelectItem
                     value="system"
-                    className="focus:bg-primary/10 transition-colors duration-150 hover:text-foreground"
+                    className="focus:bg-primary/10 transition-colors duration-150 hover:text-black dark:hover:text-white"
                   >
                     System
                   </SelectItem>
@@ -151,7 +151,7 @@ export function Header() {
                     <SelectItem
                       key={key}
                       value={key}
-                      className="focus:bg-primary/10 transition-colors duration-150 hover:text-foreground"
+                      className="focus:bg-primary/10 transition-colors duration-150 hover:text-black dark:hover:text-white"
                     >
                       <span className="me-2 rtl:ms-2 rtl:me-0">{name}</span>
                     </SelectItem>
@@ -173,19 +173,19 @@ export function Header() {
                 >
                   <SelectItem
                     value="light"
-                    className="focus:bg-primary/10 transition-colors duration-150 hover:text-foreground"
+                    className="focus:bg-primary/10 transition-colors duration-150 hover:text-black dark:hover:text-white"
                   >
                     Light
                   </SelectItem>
                   <SelectItem
                     value="dark"
-                    className="focus:bg-primary/10 transition-colors duration-150 hover:text-foreground"
+                    className="focus:bg-primary/10 transition-colors duration-150 hover:text-black dark:hover:text-white"
                   >
                     Dark
                   </SelectItem>
                   <SelectItem
                     value="system"
-                    className="focus:bg-primary/10 transition-colors duration-150 hover:text-foreground"
+                    className="focus:bg-primary/10 transition-colors duration-150 hover:text-black dark:hover:text-white"
                   >
                     System
                   </SelectItem>

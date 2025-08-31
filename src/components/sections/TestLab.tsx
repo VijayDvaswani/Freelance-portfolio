@@ -209,7 +209,12 @@ export function TestLab() {
         </div>
 
         <Tabs defaultValue="plans" className="w-full">
-          <TabsList className="grid w-full grid-cols-1 sm:grid-cols-3 bg-purple-200 backdrop-blur-sm border border-border/30 rounded-2xl p-1 sm:p-2 mb-6 sm:mb-8">
+          <TabsList
+            className="grid w-full grid-cols-1 sm:grid-cols-3 
+               bg-gray-100 dark:bg-gray-800/60 
+               backdrop-blur-sm border border-border/30 
+               rounded-2xl p-1 sm:p-2 mb-6 sm:mb-8"
+          >
             <TabsTrigger
               value="plans"
               className={`flex items-center justify-center gap-2 w-full py-2 sm:py-3 text-base sm:text-lg font-medium rounded-xl transition-all duration-200

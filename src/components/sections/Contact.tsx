@@ -10,6 +10,7 @@ import {
   ExternalLink,
   MessageCircle,
 } from "lucide-react";
+import emailjs from "@emailjs/browser";
 
 export function Contact() {
   const { t, dir } = useI18n();
@@ -19,6 +20,7 @@ export function Contact() {
     subject: "",
     message: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -30,12 +32,38 @@ export function Contact() {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Form submission logic would go here
-    console.log("Form submitted:", formData);
-    alert("Thank you for your message! I'll get back to you soon.");
-    setFormData({ name: "", email: "", subject: "", message: "" });
+    setIsSubmitting(true);
+
+    try {
+      const serviceId = "service_dmendi9";
+      const templateId = "template_0vumgwi";
+      const publicKey = "YrsiLDpY_2AtAAG10";
+
+      await emailjs.send(
+        serviceId,
+        templateId,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        },
+        publicKey
+      );
+
+      console.log("Email sent successfully!");
+      alert("Thank you for your message! I'll get back to you soon.");
+      setFormData({ name: "", email: "", subject: "", message: "" });
+    } catch (error) {
+      console.error("Failed to send email:", error);
+      alert(
+        "Sorry, there was an error sending your message. Please try again later."
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   // RTL alignment classes
@@ -227,12 +255,19 @@ export function Contact() {
 
                 <Button
                   type="submit"
-                  className="w-full rounded-xl py-3 text-base font-medium bg-accent hover:bg-accent/90 transition-colors duration-300"
+                  disabled={isSubmitting}
+                  className="w-full rounded-xl py-3 text-base font-medium bg-accent hover:bg-accent/90 transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  <Send
-                    className={`h-5 w-5 ${dir === "rtl" ? "ml-2" : "mr-2"}`}
-                  />
-                  {t("contact.form.sendButton")}
+                  {isSubmitting ? (
+                    t("contact.form.sending")
+                  ) : (
+                    <>
+                      <Send
+                        className={`h-5 w-5 ${dir === "rtl" ? "ml-2" : "mr-2"}`}
+                      />
+                      {t("contact.form.sendButton")}
+                    </>
+                  )}
                 </Button>
               </form>
             </div>
@@ -254,82 +289,100 @@ export function Contact() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* Fiverr Card */}
-            <div className="flex flex-col justify-between rounded-3xl border border-card-border bg-surface p-6 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+          <div className="grid grid-cols-1  mb-6 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-12 transform transition-all duration-1000 delay-700">
+            {/* Freelancer Card */}
+            <div className="flex flex-col justify-between rounded-3xl border border-card-border bg-surface p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
               <div className="flex flex-col items-center text-center">
-                <div className="w-16 h-16 rounded-full bg-green-500/20 flex items-center justify-center mb-4">
-                  <span className="text-2xl">💼</span>
+                <div className="w-16 h-16 rounded-full bg-orange-500/20 flex items-center justify-center mb-6">
+                  <span className="text-2xl">🚀</span>
                 </div>
-                <h3 className="text-xl font-bold text-primary mb-2">
-                  {t("contact.fiverr.title")}
+                <h3 className="text-2xl font-bold text-primary mb-4">
+                  Hire Me on Freelancer
                 </h3>
-                <p className="text-muted-foreground mb-4">
-                  {t("contact.fiverr.description")}
+                <p className="text-base text-muted-foreground leading-relaxed">
+                  SQA Engineer with proven expertise
                 </p>
               </div>
               <a
-                href="https://fiverr.com"
+                href="https://www.freelancer.pk/u/vijaydvaswani?frm=vijaydvaswani&sb=t"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center text-base font-medium text-accent hover:underline py-3 px-6 rounded-xl bg-accent/5 hover:bg-accent/10 transition-colors duration-300"
+                className="mt-8 inline-flex items-center justify-center text-base font-medium text-accent hover:underline py-3 px-6 rounded-xl bg-accent/5 hover:bg-accent/10 transition-colors duration-300"
               >
-                <ExternalLink
-                  className={`h-5 w-5 ${dir === "rtl" ? "ml-2" : "mr-2"}`}
-                />
-                {t("contact.fiverr.button")}
+                <ExternalLink className="mr-2 h-5 w-5" />
+                View Profile
+              </a>
+            </div>
+
+            {/* Fiverr Card */}
+            <div className="flex flex-col justify-between rounded-3xl border border-card-border bg-surface p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+              <div className="flex flex-col items-center text-center">
+                <div className="w-16 h-16 rounded-full bg-green-500/20 flex items-center justify-center mb-6">
+                  <span className="text-2xl">💼</span>
+                </div>
+                <h3 className="text-2xl font-bold text-primary mb-4">
+                  Hire Me on Fiverr
+                </h3>
+                <p className="text-base text-muted-foreground leading-relaxed">
+                  SQA Engineer with rapid delivery
+                </p>
+              </div>
+              <a
+                href="https://www.fiverr.com/s/kLZ2dLw"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-8 inline-flex items-center justify-center text-base font-medium text-accent hover:underline py-3 px-6 rounded-xl bg-accent/5 hover:bg-accent/10 transition-colors duration-300"
+              >
+                <ExternalLink className="mr-2 h-5 w-5" />
+                View Profile
               </a>
             </div>
 
             {/* Upwork Card */}
-            <div className="flex flex-col justify-between rounded-3xl border border-card-border bg-surface p-6 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+            <div className="flex flex-col justify-between rounded-3xl border border-card-border bg-surface p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
               <div className="flex flex-col items-center text-center">
-                <div className="w-16 h-16 rounded-full bg-purple-500/20 flex items-center justify-center mb-4">
+                <div className="w-16 h-16 rounded-full bg-purple-500/20 flex items-center justify-center mb-6">
                   <span className="text-2xl">🧳</span>
                 </div>
-                <h3 className="text-xl font-bold text-primary mb-2">
-                  {t("contact.upwork.title")}
+                <h3 className="text-2xl font-bold text-primary mb-4">
+                  View My Upwork Profile
                 </h3>
-                <p className="text-muted-foreground mb-4">
-                  {t("contact.upwork.description")}
+                <p className="text-base text-muted-foreground leading-relaxed">
+                  SQA Engineer for enterprise-grade applications
                 </p>
               </div>
               <a
-                href="https://upwork.com"
+                href="https://www.upwork.com/freelancers/vijaykumar2041"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center text-base font-medium text-accent hover:underline py-3 px-6 rounded-xl bg-accent/5 hover:bg-accent/10 transition-colors duration-300"
+                className="mt-8 inline-flex items-center justify-center text-base font-medium text-accent hover:underline py-3 px-6 rounded-xl bg-accent/5 hover:bg-accent/10 transition-colors duration-300"
               >
-                <ExternalLink
-                  className={`h-5 w-5 ${dir === "rtl" ? "ml-2" : "mr-2"}`}
-                />
-                {t("contact.upwork.button")}
+                <ExternalLink className="mr-2 h-5 w-5" />
+                View Profile
               </a>
             </div>
 
-            {/* Bark Card */}
-            <div className="flex flex-col justify-between rounded-3xl border border-card-border bg-surface p-6 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+            {/* LinkedIn Card */}
+            <div className="flex flex-col justify-between rounded-3xl border border-card-border bg-surface p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
               <div className="flex flex-col items-center text-center">
-                <div className="w-16 h-16 rounded-full bg-red-500/20 flex items-center justify-center mb-4">
-                  <span className="text-2xl">🔥</span>
+                <div className="w-16 h-16 rounded-full bg-blue-500/20 flex items-center justify-center mb-6">
+                  <span className="text-2xl">🌐</span>
                 </div>
-                <h3 className="text-xl font-bold text-primary mb-2">
-                  {t("contact.bark.title")}
+                <h3 className="text-2xl font-bold text-primary mb-4">
+                  Connect on LinkedIn
                 </h3>
-                <p className="text-muted-foreground mb-4">
-                  {t("contact.bark.description")}
+                <p className="text-base text-muted-foreground leading-relaxed">
+                  SQA Engineer passionate about quality assurance
                 </p>
               </div>
               <a
-                href="https://bark.com"
+                href="http://www.linkedin.com/in/vijaykumarvaswani"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center text-base font-medium text-accent hover:underline py-3 px-6 rounded-xl bg-accent/5 hover:bg-accent/10 transition-colors duration-300"
+                className="mt-8 inline-flex items-center justify-center text-base font-medium text-accent hover:underline py-3 px-6 rounded-xl bg-accent/5 hover:bg-accent/10 transition-colors duration-300"
               >
-                <ExternalLink
-                  className={`h-5 w-5 ${dir === "rtl" ? "ml-2" : "mr-2"}`}
-                />
-                {t("contact.bark.button")}
+                <ExternalLink className="mr-2 h-5 w-5" />
+                View Profile
               </a>
             </div>
           </div>

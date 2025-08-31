@@ -51,7 +51,7 @@ export function Hero() {
       </div>
 
       <div className="container mx-auto px-6 mt-20 md:mt-6 text-center relative z-10">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-8xl mx-auto">
           {/* Badge with animation */}
           <div
             className={`inline-flex items-center px-4 py-2 rounded-full bg-surface border border-card-border mb-3 transform transition-all duration-1000 ${
@@ -81,12 +81,36 @@ export function Hero() {
 
           {/* Profile Boxes Section */}
           <div
-            className={`grid grid-cols-1  mb-6 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-12 transform transition-all duration-1000 delay-700 ${
+            className={`grid grid-cols-1  mb-6 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-12 transform transition-all duration-1000 delay-700 ${
               isVisible
                 ? "translate-y-0 opacity-100"
                 : "translate-y-10 opacity-0"
             }`}
           >
+            {/* Freelancer Card */}
+            <div className="flex flex-col justify-between rounded-3xl border border-card-border bg-surface p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+              <div className="flex flex-col items-center text-center">
+                <div className="w-16 h-16 rounded-full bg-orange-500/20 flex items-center justify-center mb-6">
+                  <span className="text-2xl">🚀</span>
+                </div>
+                <h3 className="text-2xl font-bold text-primary mb-4">
+                  Hire Me on Freelancer
+                </h3>
+                <p className="text-base text-muted-foreground leading-relaxed">
+                  SQA Engineer with proven expertise
+                </p>
+              </div>
+              <a
+                href="https://www.freelancer.pk/u/vijaydvaswani?frm=vijaydvaswani&sb=t"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-8 inline-flex items-center justify-center text-base font-medium text-accent hover:underline py-3 px-6 rounded-xl bg-accent/5 hover:bg-accent/10 transition-colors duration-300"
+              >
+                <ExternalLink className="mr-2 h-5 w-5" />
+                View Profile
+              </a>
+            </div>
+
             {/* Fiverr Card */}
             <div className="flex flex-col justify-between rounded-3xl border border-card-border bg-surface p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
               <div className="flex flex-col items-center text-center">

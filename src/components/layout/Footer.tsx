@@ -47,7 +47,7 @@ export function Footer() {
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://github.com"
+                href="https://github.com/VijayDvaswani"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-surface border border-card-border flex items-center justify-center text-foreground hover:bg-accent hover:text-white transition-colors duration-300"
@@ -55,14 +55,14 @@ export function Footer() {
                 <Github className="h-5 w-5" />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/vijaykumarvaswani/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-surface border border-card-border flex items-center justify-center text-foreground hover:bg-accent hover:text-white transition-colors duration-300"
               >
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a
+              {/* <a
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -77,7 +77,7 @@ export function Footer() {
                 className="w-10 h-10 rounded-full bg-surface border border-card-border flex items-center justify-center text-foreground hover:bg-accent hover:text-white transition-colors duration-300"
               >
                 <Facebook className="h-5 w-5" />
-              </a>
+              </a> */}
             </div>
           </div>
 
@@ -95,14 +95,7 @@ export function Footer() {
                   {t("nav.home")}
                 </a>
               </li>
-              <li>
-                <a
-                  href="#about"
-                  className="text-muted-foreground hover:text-accent transition-colors duration-300"
-                >
-                  {t("nav.about")}
-                </a>
-              </li>
+
               <li>
                 <a
                   href="#skills"
@@ -117,6 +110,14 @@ export function Footer() {
                   className="text-muted-foreground hover:text-accent transition-colors duration-300"
                 >
                   {t("nav.projects")}
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#testlab"
+                  className="text-muted-foreground hover:text-accent transition-colors duration-300"
+                >
+                  {t("nav.testlab")}
                 </a>
               </li>
               <li>

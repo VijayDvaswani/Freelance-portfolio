@@ -5,7 +5,7 @@ type Locale = "en" | "es" | "ar";
 interface I18nContextType {
   locale: Locale;
   setLocale: (locale: Locale) => void;
-  t: (key: string) => string | string[];
+  t: (key: string) => string;
   dir: "ltr" | "rtl";
 }
 
@@ -13,6 +13,7 @@ const rtlLocales: Locale[] = ["ar"];
 
 const translations = {
   en: {
+    // Navigation
     "nav.home": "Home",
     "nav.about": "About",
     "nav.skills": "Skills",
@@ -20,6 +21,7 @@ const translations = {
     "nav.testlab": "Test Lab",
     "nav.contact": "Contact",
 
+    // Hero Section
     "hero.title": "SQA Engineer",
     "hero.subtitle":
       "Ensuring flawless software through precision, testing, and quality.",
@@ -28,11 +30,12 @@ const translations = {
     "hero.cta.projects": "View Projects",
     "hero.cta.testlab": "Open Test Lab",
 
+    // Skills Section
     "skills.title": "Expert QA Services",
     "skills.subtitle": "Comprehensive Quality Assurance Solutions",
     "skills.badge": "My Skills",
 
-    // ✅ Skills
+    // Skills Categories
     "skills.web.title": "Web App Development",
     "skills.web.desc":
       "Modern React.js applications with beautiful, responsive interfaces",
@@ -77,7 +80,6 @@ const translations = {
       "Docker",
       "Test Reporting",
     ],
-    "skills.tech": "Technologies",
 
     "skills.metrics.title": "QA Metrics & Analytics",
     "skills.metrics.desc":
@@ -89,13 +91,13 @@ const translations = {
       "KPI Tracking",
     ],
 
-    // ✅ Stats
+    // Stats
     "skills.stats.1": "Client Satisfaction",
     "skills.stats.2": "Tests Automated",
     "skills.stats.3": "Bug Detection",
     "skills.stats.4": "Projects",
 
-    // ✅ Test Lab
+    // Test Lab
     "testlab.badge": "Quality Hub",
     "testlab.title": "Test Lab Dashboard",
     "testlab.subtitle":
@@ -125,40 +127,72 @@ const translations = {
     "testlab.metrics.coverage": "Code Coverage",
     "testlab.metrics.defectDensity": "Defect Density",
     "testlab.metrics.automation": "Automation Rate",
+
+    // Projects Section
     "projects.subtitle":
-      "Explore my portfolio of innovative solutions across different platforms and technologies",
+      "Explore my portfolio of quality assurance projects across different platforms and technologies",
     "projects.categories.all": "All Projects",
     "projects.categories.web": "Web Applications",
     "projects.categories.mobile": "Mobile Apps",
     "projects.categories.software": "Software",
-    "projects.liveDemo": "Live Demo",
-    "projects.code": "Code",
+    "projects.viewProject": "View Project",
+    "projects.showMore": "Show More",
+    "projects.showLess": "Show Less",
     "projects.cta": "Interested in working together on your next project?",
 
-    "projects.1.title": "E-Commerce Platform",
+    // Project descriptions
+    "projects.1.title": "Argaam – Saudi Financial Markets & News",
     "projects.1.description":
-      "A full-featured online store with AI-powered recommendations and secure payment processing.",
+      "Argaam (English) is a premier Saudi-based financial news portal offering real-time market data, analysis, interviews, and coverage of stocks across the Gulf region.",
 
-    "projects.2.title": "Fitness Tracker Mobile App",
+    "projects.2.title": "MACRO – Saudi Economic Data & Statistics",
     "projects.2.description":
-      "A health and wellness app that tracks workouts, nutrition, and provides personalized insights.",
+      "Argaam Macro provides comprehensive economic data and statistics on the Saudi economy through simplified charts that cover all sectors, fields, and available historical periods.",
 
-    "projects.3.title": "Inventory Management System",
+    "projects.3.title": "JOYA! – Social Loyalty & Gifting Platform",
     "projects.3.description":
-      "Enterprise software for tracking inventory, sales, and supply chain operations.",
+      "JOYA! is a social loyalty platform enabling users to earn and redeem points, share experiences, and send gifts via social networking for partner stores.",
 
-    "projects.4.title": "Travel Booking Portal",
+    "projects.4.title": "MULTILIP – Where Investments Multiply with Confidence",
     "projects.4.description":
-      "A comprehensive travel booking website with flight, hotel, and car rental options.",
+      "MULTILIP is a stock investment company helping beginners and experienced investors with expert insights, data-driven strategies, and personalized portfolio management.",
 
-    "projects.5.title": "Language Learning App",
+    "projects.5.title":
+      "Highclass – Brand Expansion & Digital Retail Integration Project",
     "projects.5.description":
-      "Mobile application for learning new languages with interactive exercises and AI tutor.",
+      "HIGHCLASS, known for premium footwear, is expanding into clothing and cosmetics to create a unified lifestyle brand with a seamless shopping experience.",
 
-    "projects.6.title": "Data Visualization Dashboard",
+    "projects.6.title": "BuyHouseEZ – Non-Conventional Home Financing",
     "projects.6.description":
-      "Analytics software for visualizing complex data sets and generating insights.",
-    // Add to the en translations object
+      "BuyHouseEZ enables self-employed individuals and ITIN holders with poor credit to secure mortgages through alternative lending solutions.",
+
+    "projects.7.title": "ARGAAM100 – Stock Performance Tracker",
+    "projects.7.description":
+      "With Argaam 100, you can track the performance of listed stocks over various timeframes and compare with market competitors.",
+
+    "projects.8.title":
+      "HERFA – Build Smarter, Build Faster with Digital Construction",
+    "projects.8.description":
+      "HERFA is an online construction platform for contractors, builders, and project managers, offering real-time project tracking and material management.",
+
+    "projects.9.title": "Note 2.0 – Contemporary Jewellery for the Bold",
+    "projects.9.description":
+      "Note 2.0 is a modern jewellery brand blending elegance with bold design, offering unique pieces for work, events, and everyday wear.",
+
+    "projects.10.title": "Argaam Charts – Financial Market Charts (Arabic)",
+    "projects.10.description":
+      "Argaam Charts (Arabic) provides interactive real-time financial charts and market analytics for Gulf and Saudi stocks.",
+
+    "projects.11.title":
+      "Contractor Foreman – Construction Management Software",
+    "projects.11.description":
+      "Contractor Foreman is an all-in-one, cloud-based construction management suite offering project, financial, document, and team tracking tools.",
+
+    "projects.12.title": "MAGUSAI – Your AI-Powered Trading Partner",
+    "projects.12.description":
+      "MAGUSAI is an advanced AI-driven trading platform designed to empower traders with intelligent insights and predictive analytics.",
+
+    // Contact Section
     "contact.subtitle":
       "Get in touch with me for collaboration, inquiries, or just to say hello",
     "contact.getInTouch": "Get in Touch",
@@ -191,7 +225,8 @@ const translations = {
     "contact.bark.title": "Connect on Bark",
     "contact.bark.description": "Smart local business automation",
     "contact.bark.button": "View Profile",
-    // Add to the en translations object
+
+    // Footer Section
     "footer.description":
       "Ensuring flawless software through precision, testing, and quality. Specializing in Manual & Automated Testing with AI Integration.",
     "footer.quickLinks": "Quick Links",
@@ -204,13 +239,15 @@ const translations = {
   },
 
   es: {
+    // Navigation
     "nav.home": "Inicio",
     "nav.about": "Acerca",
     "nav.skills": "Habilidades",
     "nav.projects": "Proyectos",
     "nav.testlab": "Lab de Pruebas",
     "nav.contact": "Contacto",
-    "skills.tech": "Tecnologías",
+
+    // Hero Section
     "hero.title": "Ingeniero SQA",
     "hero.subtitle":
       "Asegurando un software impecable con precisión, pruebas y calidad.",
@@ -219,11 +256,12 @@ const translations = {
     "hero.cta.projects": "Ver Proyectos",
     "hero.cta.testlab": "Abrir Lab de Pruebas",
 
+    // Skills Section
     "skills.title": "Servicios Expertos de QA",
     "skills.subtitle": "Soluciones Integrales de Aseguramiento de Calidad",
     "skills.badge": "Mis Habilidades",
 
-    // ✅ Skills
+    // Skills Categories
     "skills.web.title": "Desarrollo de Aplicaciones Web",
     "skills.web.desc":
       "Aplicaciones modernas en React.js con interfaces hermosas y responsivas",
@@ -284,13 +322,13 @@ const translations = {
       "Seguimiento de KPIs",
     ],
 
-    // ✅ Stats
+    // Stats
     "skills.stats.1": "Satisfacción del Cliente",
     "skills.stats.2": "Pruebas Automatizadas",
     "skills.stats.3": "Detección de Errores",
     "skills.stats.4": "Proyectos",
 
-    // ✅ Test Lab
+    // Test Lab
     "testlab.badge": "Centro de Calidad",
     "testlab.title": "Panel del Laboratorio de Pruebas",
     "testlab.subtitle":
@@ -320,41 +358,77 @@ const translations = {
     "testlab.metrics.coverage": "Cobertura de Código",
     "testlab.metrics.defectDensity": "Densidad de Defectos",
     "testlab.metrics.automation": "Tasa de Automatización",
-    // Add to the es translations object
+
+    // Projects Section
     "projects.subtitle":
-      "Explora mi portafolio de soluciones innovadoras en diferentes plataformas y tecnologías",
+      "Explora mi portafolio de proyectos de garantía de calidad en diferentes plataformas y tecnologías",
     "projects.categories.all": "Todos los Proyectos",
     "projects.categories.web": "Aplicaciones Web",
     "projects.categories.mobile": "Aplicaciones Móviles",
     "projects.categories.software": "Software",
-    "projects.liveDemo": "Demo en Vivo",
-    "projects.code": "Código",
+    "projects.viewProject": "Ver Proyecto",
+    "projects.showMore": "Mostrar Más",
+    "projects.showLess": "Mostrar Menos",
     "projects.cta": "¿Interesado en trabajar juntos en tu próximo proyecto?",
 
-    "projects.1.title": "Plataforma de Comercio Electrónico",
+    // Project descriptions
+    "projects.1.title":
+      "Argaam – Mercados Financieros y Noticias de Arabia Saudita",
     "projects.1.description":
-      "Una tienda en línea completa con recomendaciones impulsadas por IA y procesamiento de pagos seguro.",
+      "Argaam (inglés) es un portal de noticias financieras con sede en Arabia Saudita que ofrece datos de mercado en tiempo real, análisis, entrevistas y cobertura de acciones en toda la región del Golfo.",
 
-    "projects.2.title": "Aplicación Móvil de Seguimiento de Fitness",
+    "projects.2.title":
+      "MACRO – Datos y Estadísticas Económicas de Arabia Saudita",
     "projects.2.description":
-      "Una aplicación de salud y bienestar que rastrea entrenamientos, nutrición y proporciona información personalizada.",
+      "Argaam Macro proporciona datos económicos integrales y estadísticas sobre la economía saudí a través de gráficos simplificados que cubren todos los sectores, campos y períodos históricos disponibles.",
 
-    "projects.3.title": "Sistema de Gestión de Inventario",
+    "projects.3.title": "JOYA! – Plataforma Social de Lealtad y Regalos",
     "projects.3.description":
-      "Software empresarial para el seguimiento de inventario, ventas y operaciones de la cadena de suministro.",
+      "JOYA! es una plataforma social de lealtad que permite a los usuarios ganar y canjear puntos, compartir experiencias y enviar regalos a través de redes sociales para tiendas asociadas.",
 
-    "projects.4.title": "Portal de Reservas de Viajes",
+    "projects.4.title":
+      "MULTILIP – Donde las Inversiones se Multiplican con Confianza",
     "projects.4.description":
-      "Un sitio web completo de reservas de viajes con opciones de vuelos, hoteles y alquiler de coches.",
+      "MULTILIP es una empresa de inversión en acciones que ayuda a principiantes e inversores experimentados con información experta, estrategias basadas en datos y gestión de cartera personalizada.",
 
-    "projects.5.title": "Aplicación de Aprendizaje de Idiomas",
+    "projects.5.title":
+      "Highclass – Expansión de Marca e Integración de Comercio Digital",
     "projects.5.description":
-      "Aplicación móvil para aprender nuevos idiomas con ejercicios interactivos y tutor de IA.",
+      "HIGHCLASS, conocida por calzado premium, se está expandiendo a ropa y cosméticos para crear una marca de estilo de vida unificada con una experiencia de compra perfecta.",
 
-    "projects.6.title": "Panel de Visualización de Datos",
+    "projects.6.title":
+      "BuyHouseEZ – Financiamiento de Vivienda No Convencional",
     "projects.6.description":
-      "Software de análisis para visualizar conjuntos de datos complejos y generar información.",
-    // Add to the es translations object
+      "BuyHouseEZ permite a personas independientes y titulares de ITIN con mal crédito obtener hipotecas a través de soluciones crediticias alternativas.",
+
+    "projects.7.title": "ARGAAM100 – Rastreador de Rendimiento de Acciones",
+    "projects.7.description":
+      "Con Argaam 100, puedes rastrear el rendimiento de las acciones cotizadas en varios períodos y comparar con los competidores del mercado.",
+
+    "projects.8.title":
+      "HERFA – Construye de Forma Más Inteligente y Rápida con Construcción Digital",
+    "projects.8.description":
+      "HERFA es una plataforma de construcción en línea para contratistas, constructores y gerentes de proyectos que ofrece seguimiento de proyectos en tiempo real y gestión de materiales.",
+
+    "projects.9.title": "Note 2.0 – Joyería Contemporánea para los Audaces",
+    "projects.9.description":
+      "Note 2.0 es una marca de joyería moderna que combina elegancia con diseño audaz, ofreciendo piezas únicas para el trabajo, eventos y uso diario.",
+
+    "projects.10.title":
+      "Argaam Charts – Gráficos de Mercados Financieros (Árabe)",
+    "projects.10.description":
+      "Argaam Charts (árabe) proporciona gráficos financieros interactivos en tiempo real y análisis de mercado para acciones del Golfo y saudíes.",
+
+    "projects.11.title":
+      "Contractor Foreman – Software de Gestión de Construcción",
+    "projects.11.description":
+      "Contractor Foreman es un conjunto de gestión de construcción integral basado en la nube que ofrece herramientas de seguimiento de proyectos, finanzas, documentos y equipos.",
+
+    "projects.12.title": "MAGUSAI – Tu Socio de Trading Impulsado por IA",
+    "projects.12.description":
+      "MAGUSAI es una plataforma de trading avanzada impulsada por IA diseñada para capacitar a los traders con información inteligente y análisis predictivo.",
+
+    // Contact Section
     "contact.subtitle":
       "Ponte en contacto conmigo para colaboraciones, consultas o simplemente para saludar",
     "contact.getInTouch": "Ponerse en Contacto",
@@ -388,7 +462,8 @@ const translations = {
     "contact.bark.description":
       "Automatización inteligente para negocios locales",
     "contact.bark.button": "Ver Perfil",
-    // Add to the es translations object
+
+    // Footer Section
     "footer.description":
       "Asegurando software impecable a través de precisión, pruebas y calidad. Especializado en Pruebas Manuales y Automatizadas con Integración de IA.",
     "footer.quickLinks": "Enlaces Rápidos",
@@ -401,13 +476,15 @@ const translations = {
   },
 
   ar: {
+    // Navigation
     "nav.home": "الرئيسية",
     "nav.about": "حول",
     "nav.skills": "المهارات",
     "nav.projects": "المشاريع",
     "nav.testlab": "مختبر الاختبار",
     "nav.contact": "اتصل",
-    "skills.tech": "التقنيات",
+
+    // Hero Section
     "hero.title": "مهندس ضمان الجودة",
     "hero.subtitle":
       "ضمان برمجيات خالية من الأخطاء من خلال الدقة والاختبار والجودة",
@@ -416,11 +493,12 @@ const translations = {
     "hero.cta.projects": "عرض المشاريع",
     "hero.cta.testlab": "فتح مختبر الاختبار",
 
+    // Skills Section
     "skills.title": "خدمات ضمان الجودة المتخصصة",
     "skills.subtitle": "حلول شاملة لضمان الجودة",
     "skills.badge": "مهاراتي",
 
-    // ✅ Skills
+    // Skills Categories
     "skills.web.title": "تطوير تطبيقات الويب",
     "skills.web.desc": "تطبيقات React.js حديثة بواجهات جميلة ومتجاوبة",
     "skills.web.tools": ["React.js", "Next.js", "تصميم متجاوب", "تطبيقات PWA"],
@@ -463,13 +541,13 @@ const translations = {
       "تتبع مؤشرات الأداء",
     ],
 
-    // ✅ Stats
+    // Stats
     "skills.stats.1": "رضا العملاء",
     "skills.stats.2": "اختبارات مؤتمتة",
     "skills.stats.3": "اكتشاف الأخطاء",
     "skills.stats.4": "المشاريع",
 
-    // ✅ Test Lab
+    // Test Lab
     "testlab.badge": "مركز الجودة",
     "testlab.title": "لوحة مختبر الاختبار",
     "testlab.subtitle": "عرض تفاعلي لقدرات إدارة الاختبارات ومقاييس الجودة",
@@ -495,41 +573,70 @@ const translations = {
     "testlab.metrics.coverage": "تغطية الكود",
     "testlab.metrics.defectDensity": "كثافة العيوب",
     "testlab.metrics.automation": "معدل الأتمتة",
-    // Add to the ar translations object
+
+    // Projects Section
     "projects.subtitle":
-      "استكشف محفظتي من الحلول المبتكرة عبر منصات وتقنيات مختلفة",
+      "استكشف محفظتي من مشاريع ضمان الجودة عبر منصات وتقنيات مختلفة",
     "projects.categories.all": "جميع المشاريع",
     "projects.categories.web": "تطبيقات الويب",
     "projects.categories.mobile": "تطبيقات الجوال",
     "projects.categories.software": "البرمجيات",
-    "projects.liveDemo": "عرض مباشر",
-    "projects.code": "الكود",
+    "projects.viewProject": "عرض المشروع",
+    "projects.showMore": "عرض المزيد",
+    "projects.showLess": "عرض أقل",
     "projects.cta": "هل أنت مهتم بالعمل معًا في مشروعك القادم؟",
 
-    "projects.1.title": "منصة التجارة الإلكترونية",
+    // Project descriptions
+    "projects.1.title": "أرقام - الأسواق المالية والأخبار السعودية",
     "projects.1.description":
-      "متجر عبر الإنترنت كامل الميزات مع توصيات مدعومة بالذكاء الاصطناعي ومعالجة دفع آمنة.",
+      "أرقام (الإنجليزية) هي بوابة أخبار مالية رائدة مقرها المملكة العربية السعودية تقدم بيانات السوق في الوقت الفعلي والتحليلات والمقابلات والتغطية للأسهم في جميع أنحاء منطقة الخليج.",
 
-    "projects.2.title": "تطبيق تتبع اللياقة البدنية للجوال",
+    "projects.2.title": "ماكرو - البيانات والإحصاءات الاقتصادية السعودية",
     "projects.2.description":
-      "تطبيق صحة ولياقة بدنية يتتبع التمارين والتغذية ويوفر رؤى مخصصة.",
+      "يوفر أرقام ماكرو بيانات اقتصادية شاملة وإحصاءات عن الاقتصاد السعودي من خلال مخططات مبسطة تغطي جميع القطاعات والمجالات والفترات التاريخية المتاحة.",
 
-    "projects.3.title": "نظام إدارة المخزون",
+    "projects.3.title": "جويّا! - منصة الولاء الاجتماعي والهدايا",
     "projects.3.description":
-      "برنامج مؤسسي لتتبع المخزون والمبيعات وعمليات سلسلة التوريد.",
+      "جويّا! هي منصة ولاء اجتماعي تمكن المستخدمين من كسب النقاط واستبدالها ومشاركة التجارب وإرسال الهدايا عبر الشبكات الاجتماعية للمتاجر الشريكة.",
 
-    "projects.4.title": "بوابة حجز السفر",
+    "projects.4.title": "مولتيليب - حيث تتضاعف الاستثمارات بثقة",
     "projects.4.description":
-      "موقع ويب شامل لحجز السفر مع خيارات الطيران والفنادق وتأجير السيارات.",
+      "مولتيليب هي شركة استثمار في الأسهم تساعد المبتدئين والمستثمرين ذوي الخبرة برؤى الخبراء واستراتيجيات قائمة على البيانات وإدارة محافظ مخصصة.",
 
-    "projects.5.title": "تطبيق تعلم اللغات",
+    "projects.5.title":
+      "هاي كلاس - مشروع توسيع العلامة التجارية وتكامل البيع بالتجزئة الرقمي",
     "projects.5.description":
-      "تطبيق جوال لتعلم لغات جديدة مع تمارين تفاعلية ومدرب بالذكاء الاصطناعي.",
+      "هاي كلاس، المعروفة بإنتاج calzado premium، تتوسع في الملابس ومستحضرات التجميل لإنشاء علامة تجارية موحدة لأسلوب الحياة مع تجربة تسوق سلسة.",
 
-    "projects.6.title": "لوحة تصور البيانات",
+    "projects.6.title": "BuyHouseEZ - تمويل غير تقليدي للإسكان",
     "projects.6.description":
-      "برنامج تحليلات لتصور مجموعات البيانات المعقدة وتوليد الرؤى.",
-    // Add to the ar translations object
+      "تمكن BuyHouseEZ الأفراد العاملين لحسابهم الخاص وحاملي ITIN ذوي الائتمان الضعيف من الحصول على قروض الرهن العقاري من خلال حلول الإقراض البديلة.",
+
+    "projects.7.title": "أرقام 100 - متتبع أداء الأسهم",
+    "projects.7.description":
+      "مع أرقام 100، يمكنك تتبع أداء الأسهم المدرجة على مدى أطر زمنية مختلفة ومقارنتها مع منافسي السوق.",
+
+    "projects.8.title": "هرفا - بناء أذكى وأسرع مع البناء الرقمي",
+    "projects.8.description":
+      "هرفا هي منصة بناء عبر الإنترنت للمقاولين والبنائين ومديري المشاريع، تقدم تتبع المشاريع في الوقت الفعلي وإدارة المواد.",
+
+    "projects.9.title": "نوت 2.0 - مجوهرات معاصرة للجريئين",
+    "projects.9.description":
+      "نوت 2.0 هي علامة تجارية للمجوهرات الحديثة تدمج الأناقة مع التصميم الجريء، وتقدم قطعًا فريدة للعمل والفعاليات والارتداء اليومي.",
+
+    "projects.10.title": "أرقام تشارتس - مخططات الأسواق المالية (عربي)",
+    "projects.10.description":
+      "تقدم أرقام تشارتس (عربي) مخططات مالية تفاعلية في الوقت الفعلي وتحليلات السوق لأسهم الخليج والسعودية.",
+
+    "projects.11.title": "المقاول فورمان - برنامج إدارة البناء",
+    "projects.11.description":
+      "المقاول فورمان هو مجموعة إدارة بناء شاملة قائمة على السحابة تقدم أدوات تتبع المشاريع والمالية والمستندات والفريق.",
+
+    "projects.12.title": "ماجوس AI - شريك التداول المدعوم بالذكاء الاصطناعي",
+    "projects.12.description":
+      "ماجوس AI هي منصة تداول متقدمة مدعومة بالذكاء الاصطناعي مصممة لتمكين المتداولين من خلال الرؤى الذكية والتحليلات التنبؤية.",
+
+    // Contact Section
     "contact.subtitle": "تواصل معي للتعاون أو الاستفسارات أو فقط لترحيب",
     "contact.getInTouch": "ابق على تواصل",
     "contact.email": "البريد الإلكتروني",
@@ -561,7 +668,8 @@ const translations = {
     "contact.bark.title": "تواصل على Bark",
     "contact.bark.description": "أتمتة الأعمال المحلية الذكية",
     "contact.bark.button": "عرض الملف",
-    // Add to the ar translations object
+
+    // Footer Section
     "footer.description":
       "ضمان برمجيات خالية من الأخطاء من خلال الدقة والاختبار والجودة. متخصص في الاختبار اليدوي والآلي مع تكامل الذكاء الاصطناعي.",
     "footer.quickLinks": "روابط سريعة",
