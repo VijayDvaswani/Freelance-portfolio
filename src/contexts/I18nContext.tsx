@@ -46,15 +46,10 @@ const translations = {
       "PWA Development",
     ],
 
-    "skills.auto.title": "Test Automation",
-    "skills.auto.desc":
-      "Advanced automation frameworks with AI-enhanced test generation and maintenance",
-    "skills.auto.tools": [
-      "Cypress",
-      "Playwright",
-      "Selenium",
-      "AI Test Generation",
-    ],
+    "skills.mobile.title": "Mobile Development",
+    "skills.mobile.desc":
+      "Creating cross-platform and native mobile applications with smooth performance.",
+    "skills.mobile.tech": ["React Native", "Flutter", "Swift"],
 
     "skills.api.title": "API Testing",
     "skills.api.desc":
@@ -66,11 +61,10 @@ const translations = {
       "API Documentation",
     ],
 
-    "skills.perf.title": "Performance Testing",
-    "skills.perf.desc":
-      "Load, stress, and performance optimization testing with detailed analytics",
-    "skills.perf.tools": ["JMeter", "K6", "LoadRunner", "Performance Metrics"],
-
+    "skills.ai.title": "AI & Machine Learning",
+    "skills.ai.desc":
+      "Developing AI models and integrating ML solutions into real-world applications.",
+    "skills.ai.tools": ["TensorFlow", "PyTorch", "OpenAI API"],
     "skills.cicd.title": "CI/CD Integration",
     "skills.cicd.desc":
       "Seamless integration of testing into continuous delivery pipelines",
@@ -322,14 +316,14 @@ const translations = {
       "Desarrollo PWA",
     ],
 
-    "skills.auto.title": "Automatización de Pruebas",
-    "skills.auto.desc":
-      "Frameworks avanzados con generación y mantenimiento de pruebas con IA",
-    "skills.auto.tools": [
-      "Cypress",
-      "Playwright",
-      "Selenium",
-      "Generación de Pruebas con IA",
+    "skills.mobile.title": "Desarrollo de Aplicaciones Móviles",
+    "skills.mobile.desc":
+      "Aplicaciones modernas en React.js con interfaces hermosas y responsivas",
+    "skills.mobile.tools": [
+      "React.js",
+      "Next.js",
+      "Diseño Responsivo",
+      "Desarrollo PWA",
     ],
 
     "skills.api.title": "Pruebas de API",
@@ -342,15 +336,10 @@ const translations = {
       "Documentación de API",
     ],
 
-    "skills.perf.title": "Pruebas de Rendimiento",
-    "skills.perf.desc":
-      "Pruebas de carga, estrés y optimización de rendimiento con análisis detallados",
-    "skills.perf.tools": [
-      "JMeter",
-      "K6",
-      "LoadRunner",
-      "Métricas de Rendimiento",
-    ],
+    "skills.ai.title": "Inteligencia Artificial",
+    "skills.ai.desc":
+      "Desarrollo de modelos de IA y integración de soluciones ML en aplicaciones reales",
+    "skills.ai.tools": ["TensorFlow", "PyTorch", "OpenAI API"],
 
     "skills.cicd.title": "Integración CI/CD",
     "skills.cicd.desc":
@@ -603,25 +592,18 @@ const translations = {
     "skills.web.desc": "تطبيقات React.js حديثة بواجهات جميلة ومتجاوبة",
     "skills.web.tools": ["React.js", "Next.js", "تصميم متجاوب", "تطبيقات PWA"],
 
-    "skills.auto.title": "أتمتة الاختبارات",
-    "skills.auto.desc":
-      "أطر أتمتة متقدمة مع إنشاء وصيانة الاختبارات بالذكاء الاصطناعي",
-    "skills.auto.tools": [
-      "Cypress",
-      "Playwright",
-      "Selenium",
-      "إنشاء اختبارات بالذكاء الاصطناعي",
-    ],
+    "skills.mobile.title": "تطوير تطبيقات الهاتف",
+    "skills.mobile.desc": "تطبيقات React.js حديثة بواجهات جميلة ومتجاوبة",
+    "skills.mobile.tools": ["React Native", "Flutter", "Swift", "Kotlin"],
 
     "skills.api.title": "اختبار واجهات API",
     "skills.api.desc": "دورة كاملة لاختبار API من الوظيفي إلى الأمني",
     "skills.api.tools": ["Postman", "REST Assured", "Newman", "توثيق API"],
 
-    "skills.perf.title": "اختبارات الأداء",
-    "skills.perf.desc":
-      "اختبارات التحميل والإجهاد وتحسين الأداء مع تحليلات مفصلة",
-    "skills.perf.tools": ["JMeter", "K6", "LoadRunner", "مقاييس الأداء"],
-
+    "skills.ai.title": "الذكاء الاصطناعي وتعلم الآلة",
+    "skills.ai.desc":
+      "تطوير نماذج الذكاء الاصطناعي ودمج حلول تعلم الآلة في التطبيقات الواقعية.",
+    "skills.ai.tools": ["TensorFlow", "PyTorch", "OpenAI API"],
     "skills.cicd.title": "تكامل CI/CD",
     "skills.cicd.desc": "دمج سلس للاختبارات في خطوط التسليم المستمرة",
     "skills.cicd.tools": [

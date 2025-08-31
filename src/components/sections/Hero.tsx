@@ -53,7 +53,7 @@ export function Hero() {
       <div className="container mx-auto px-6 mt-20 md:mt-6 text-center relative z-10">
         <div className="max-w-8xl mx-auto">
           {/* Badge with animation */}
-          <div
+          {/* <div
             className={`inline-flex items-center px-4 py-2 rounded-full bg-surface border border-card-border mb-3 transform transition-all duration-1000 ${
               isVisible
                 ? "translate-y-0 opacity-100"
@@ -64,7 +64,7 @@ export function Hero() {
               <Star className="h-4 w-4 mr-2 text-accent fill-current" />
               {t("hero.title")}
             </span>
-          </div>
+          </div> */}
 
           {/* Main heading with animation */}
           <h1
@@ -96,9 +96,6 @@ export function Hero() {
                 <h3 className="text-2xl font-bold text-primary mb-4">
                   Hire Me on Freelancer
                 </h3>
-                <p className="text-base text-muted-foreground leading-relaxed">
-                  SQA Engineer with proven expertise
-                </p>
               </div>
               <a
                 href="https://www.freelancer.pk/u/vijaydvaswani?frm=vijaydvaswani&sb=t"
@@ -120,9 +117,6 @@ export function Hero() {
                 <h3 className="text-2xl font-bold text-primary mb-4">
                   Hire Me on Fiverr
                 </h3>
-                <p className="text-base text-muted-foreground leading-relaxed">
-                  SQA Engineer with rapid delivery
-                </p>
               </div>
               <a
                 href="https://www.fiverr.com/s/kLZ2dLw"
@@ -142,11 +136,8 @@ export function Hero() {
                   <span className="text-2xl">🧳</span>
                 </div>
                 <h3 className="text-2xl font-bold text-primary mb-4">
-                  View My Upwork Profile
+                 Hire me on Upwork
                 </h3>
-                <p className="text-base text-muted-foreground leading-relaxed">
-                  SQA Engineer for enterprise-grade applications
-                </p>
               </div>
               <a
                 href="https://www.upwork.com/freelancers/vijaykumar2041"
@@ -168,9 +159,6 @@ export function Hero() {
                 <h3 className="text-2xl font-bold text-primary mb-4">
                   Connect on LinkedIn
                 </h3>
-                <p className="text-base text-muted-foreground leading-relaxed">
-                  SQA Engineer passionate about quality assurance
-                </p>
               </div>
               <a
                 href="http://www.linkedin.com/in/vijaykumarvaswani"

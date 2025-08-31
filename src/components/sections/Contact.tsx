@@ -119,7 +119,9 @@ export function Contact() {
                     <h4 className="font-semibold text-foreground">
                       {t("contact.email")}
                     </h4>
-                    <p className="text-muted-foreground">vijay.dvaswani@gmail.com</p>
+                    <p className="text-muted-foreground">
+                      vijay.dvaswani@gmail.com
+                    </p>
                     <p className="text-sm text-muted-foreground mt-1 flex items-center">
                       <Clock className="h-4 w-4 mr-1" />
                       {t("contact.responseTime")}
@@ -191,7 +193,7 @@ export function Contact() {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-card-border rounded-xl focus:ring-2 focus:ring-accent focus:border-transparent bg-background transition-colors"
+                      className="w-full px-4 py-3 border border-card-border rounded-xl bg-background transition-colors"
                       placeholder={t("contact.form.namePlaceholder")}
                     />
                   </div>
@@ -209,7 +211,7 @@ export function Contact() {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-card-border rounded-xl focus:ring-2 focus:ring-accent focus:border-transparent bg-background transition-colors"
+                      className="w-full px-4 py-3 border border-card-border rounded-xl bg-background transition-colors"
                       placeholder={t("contact.form.emailPlaceholder")}
                     />
                   </div>
@@ -229,7 +231,7 @@ export function Contact() {
                     value={formData.subject}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-card-border rounded-xl focus:ring-2 focus:ring-accent focus:border-transparent bg-background transition-colors"
+                    className="w-full px-4 py-3 border border-card-border rounded-xl   bg-background transition-colors"
                     placeholder={t("contact.form.subjectPlaceholder")}
                   />
                 </div>
@@ -248,7 +250,7 @@ export function Contact() {
                     onChange={handleChange}
                     required
                     rows={5}
-                    className="w-full px-4 py-3 border border-card-border rounded-xl focus:ring-2 focus:ring-accent focus:border-transparent bg-background transition-colors"
+                    className="w-full px-4 py-3 border border-card-border rounded-xl   bg-background transition-colors"
                     placeholder={t("contact.form.messagePlaceholder")}
                   ></textarea>
                 </div>
@@ -289,6 +291,7 @@ export function Contact() {
             </p>
           </div>
 
+          {/* Profile Boxes Section */}
           <div className="grid grid-cols-1  mb-6 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-12 transform transition-all duration-1000 delay-700">
             {/* Freelancer Card */}
             <div className="flex flex-col justify-between rounded-3xl border border-card-border bg-surface p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
@@ -299,9 +302,6 @@ export function Contact() {
                 <h3 className="text-2xl font-bold text-primary mb-4">
                   Hire Me on Freelancer
                 </h3>
-                <p className="text-base text-muted-foreground leading-relaxed">
-                  SQA Engineer with proven expertise
-                </p>
               </div>
               <a
                 href="https://www.freelancer.pk/u/vijaydvaswani?frm=vijaydvaswani&sb=t"
@@ -323,9 +323,6 @@ export function Contact() {
                 <h3 className="text-2xl font-bold text-primary mb-4">
                   Hire Me on Fiverr
                 </h3>
-                <p className="text-base text-muted-foreground leading-relaxed">
-                  SQA Engineer with rapid delivery
-                </p>
               </div>
               <a
                 href="https://www.fiverr.com/s/kLZ2dLw"
@@ -345,11 +342,8 @@ export function Contact() {
                   <span className="text-2xl">🧳</span>
                 </div>
                 <h3 className="text-2xl font-bold text-primary mb-4">
-                  View My Upwork Profile
+                  Hire me on Upwork
                 </h3>
-                <p className="text-base text-muted-foreground leading-relaxed">
-                  SQA Engineer for enterprise-grade applications
-                </p>
               </div>
               <a
                 href="https://www.upwork.com/freelancers/vijaykumar2041"
@@ -371,9 +365,6 @@ export function Contact() {
                 <h3 className="text-2xl font-bold text-primary mb-4">
                   Connect on LinkedIn
                 </h3>
-                <p className="text-base text-muted-foreground leading-relaxed">
-                  SQA Engineer passionate about quality assurance
-                </p>
               </div>
               <a
                 href="http://www.linkedin.com/in/vijaykumarvaswani"
