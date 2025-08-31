@@ -49,7 +49,7 @@ const translations = {
     "skills.mobile.title": "Mobile Development",
     "skills.mobile.desc":
       "Creating cross-platform and native mobile applications with smooth performance.",
-    "skills.mobile.tech": ["React Native", "Flutter", "Swift"],
+    "skills.mobile.tools": ["React Native", "Flutter", "Swift"],
 
     "skills.api.title": "API Testing",
     "skills.api.desc":
