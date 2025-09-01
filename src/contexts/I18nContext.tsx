@@ -23,10 +23,9 @@ const translations = {
 
     // Hero Section
     "hero.title": "SQA Engineer",
+
     "hero.subtitle":
-      "Ensuring flawless software through precision, testing, and quality.",
-    "hero.description":
-      "Specializing in Manual & Automated Testing with AI Integration, Performance Testing, and Quality Metrics Analytics",
+      "Building scalable software with AI-driven quality, performance, and reliability",
     "hero.cta.projects": "View Projects",
     "hero.cta.testlab": "Open Test Lab",
 
@@ -305,9 +304,7 @@ const translations = {
     // Hero Section
     "hero.title": "Ingeniero SQA",
     "hero.subtitle":
-      "Asegurando un software impecable con precisión, pruebas y calidad.",
-    "hero.description":
-      "Especializado en Pruebas Manuales y Automatizadas con Integración de IA, Pruebas de Rendimiento y Análisis de Métricas de Calidad",
+      "Creando software escalable con calidad, rendimiento y fiabilidad impulsados por IA",
     "hero.cta.projects": "Ver Proyectos",
     "hero.cta.testlab": "Abrir Lab de Pruebas",
 
@@ -592,9 +589,7 @@ const translations = {
     // Hero Section
     "hero.title": "مهندس ضمان الجودة",
     "hero.subtitle":
-      "ضمان برمجيات خالية من الأخطاء من خلال الدقة والاختبار والجودة",
-    "hero.description":
-      "متخصص في الاختبار اليدوي والآلي مع تكامل الذكاء الاصطناعي واختبار الأداء وتحليل مقاييس الجودة",
+      "نبني برمجيات قابلة للتوسع بجودة وأداء وموثوقية مدعومة بالذكاء الاصطناعي",
     "hero.cta.projects": "عرض المشاريع",
     "hero.cta.testlab": "فتح مختبر الاختبار",
 

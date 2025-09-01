@@ -68,7 +68,7 @@ export function Hero() {
 
           {/* Main heading with animation */}
           <h1
-            className={`text-3xl md:text-6xl lg:text-7xl font-bold leading-tight max-w-5xl mx-auto transform transition-all duration-1000 delay-150 ${
+            className={`text-3xl md:text-6xl lg:text-6xl font-bold leading-tight max-w-5xl mx-auto transform transition-all duration-1000 delay-150 ${
               isVisible
                 ? "translate-y-0 opacity-100"
                 : "translate-y-10 opacity-0"
