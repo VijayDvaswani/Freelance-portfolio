@@ -53,14 +53,15 @@ export function Skills() {
       hoverColor: "hover:from-emerald-500/20 hover:to-emerald-600/20",
       iconColor: "text-emerald-500",
     },
+
     {
-      icon: <Database className="h-8 w-8" />,
-      title: t("skills.api.title"),
-      description: t("skills.api.desc"),
-      tools: t("skills.api.tools"),
-      color: "from-violet-500/10 to-violet-600/10",
-      hoverColor: "hover:from-violet-500/20 hover:to-violet-600/20",
-      iconColor: "text-violet-500",
+      icon: <BarChart3 className="h-8 w-8" />,
+      title: t("skills.metrics.title"),
+      description: t("skills.metrics.desc"),
+      tools: t("skills.metrics.tools"),
+      color: "from-cyan-500/10 to-cyan-600/10",
+      hoverColor: "hover:from-cyan-500/20 hover:to-cyan-600/20",
+      iconColor: "text-cyan-500",
     },
     {
       icon: <Gauge className="h-8 w-8" />,
@@ -80,15 +81,15 @@ export function Skills() {
       hoverColor: "hover:from-purple-500/20 hover:to-purple-600/20",
       iconColor: "text-purple-500",
     },
-    {
-      icon: <BarChart3 className="h-8 w-8" />,
-      title: t("skills.metrics.title"),
-      description: t("skills.metrics.desc"),
-      tools: t("skills.metrics.tools"),
-      color: "from-cyan-500/10 to-cyan-600/10",
-      hoverColor: "hover:from-cyan-500/20 hover:to-cyan-600/20",
-      iconColor: "text-cyan-500",
-    },
+    // {
+    //   icon: <Database className="h-8 w-8" />,
+    //   title: t("skills.api.title"),
+    //   description: t("skills.api.desc"),
+    //   tools: t("skills.api.tools"),
+    //   color: "from-violet-500/10 to-violet-600/10",
+    //   hoverColor: "hover:from-violet-500/20 hover:to-violet-600/20",
+    //   iconColor: "text-violet-500",
+    // },
   ];
 
   // Dynamic spacing classes for RTL

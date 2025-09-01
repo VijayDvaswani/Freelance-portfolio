@@ -89,10 +89,10 @@ const translations = {
     "skills.metrics.desc":
       "Data-driven quality insights with comprehensive reporting and dashboards",
     "skills.metrics.tools": [
-      "Test Coverage",
-      "Defect Metrics",
-      "Quality Reports",
-      "KPI Tracking",
+      "Mobile Testing",
+      "Web Testing",
+      "API Testing",
+      "Performance Testing",
     ],
 
     // Stats
@@ -368,10 +368,10 @@ const translations = {
     "skills.metrics.desc":
       "Insights de calidad basados en datos con reportes y dashboards completos",
     "skills.metrics.tools": [
-      "Cobertura de Pruebas",
-      "Métricas de Defectos",
-      "Reportes de Calidad",
-      "Seguimiento de KPIs",
+      "Pruebas móviles",
+      "Pruebas web",
+      "Pruebas de API",
+      "Pruebas de rendimiento",
     ],
 
     // Stats
@@ -638,10 +638,10 @@ const translations = {
     "skills.metrics.desc":
       "رؤى جودة قائمة على البيانات مع تقارير ولوحات معلومات شاملة",
     "skills.metrics.tools": [
-      "تغطية الاختبارات",
-      "مقاييس العيوب",
-      "تقارير الجودة",
-      "تتبع مؤشرات الأداء",
+      "اختبار التطبيقات المحمولة",
+      "اختبار الويب",
+      "اختبار واجهة برمجة التطبيقات (API)",
+      "اختبار الأداء",
     ],
 
     // Stats

@@ -144,7 +144,7 @@ export function Footer() {
               </li>
               <li>
                 <span className="text-muted-foreground">
-                  {t("skills.auto.title")}
+                  {t("skills.mobile.title")}
                 </span>
               </li>
               <li>
@@ -154,7 +154,7 @@ export function Footer() {
               </li>
               <li>
                 <span className="text-muted-foreground">
-                  {t("skills.perf.title")}
+                  {t("skills.ai.title")}
                 </span>
               </li>
               <li>
