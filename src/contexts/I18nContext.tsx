@@ -49,7 +49,12 @@ const translations = {
     "skills.mobile.title": "Mobile Development",
     "skills.mobile.desc":
       "Creating cross-platform and native mobile applications with smooth performance.",
-    "skills.mobile.tools": ["React Native", "Flutter", "Swift"],
+    "skills.mobile.tools": [
+      "React Native",
+      "Flutter",
+      "Swift",
+      "Android (Java/Kotlin)",
+    ],
 
     "skills.api.title": "API Testing",
     "skills.api.desc":
@@ -64,7 +69,13 @@ const translations = {
     "skills.ai.title": "AI & Machine Learning",
     "skills.ai.desc":
       "Developing AI models and integrating ML solutions into real-world applications.",
-    "skills.ai.tools": ["TensorFlow", "PyTorch", "OpenAI API"],
+    "skills.ai.tools": [
+      "Generative AI",
+      "Machine Learning",
+      "Deep Leaning",
+      "Python",
+    ],
+
     "skills.cicd.title": "CI/CD Integration",
     "skills.cicd.desc":
       "Seamless integration of testing into continuous delivery pipelines",
@@ -320,10 +331,10 @@ const translations = {
     "skills.mobile.desc":
       "Aplicaciones modernas en React.js con interfaces hermosas y responsivas",
     "skills.mobile.tools": [
-      "React.js",
-      "Next.js",
-      "Diseño Responsivo",
-      "Desarrollo PWA",
+      "React Native",
+      "Flutter",
+      "Swift",
+      "Android (Java/Kotlin)",
     ],
 
     "skills.api.title": "Pruebas de API",
@@ -339,7 +350,12 @@ const translations = {
     "skills.ai.title": "Inteligencia Artificial",
     "skills.ai.desc":
       "Desarrollo de modelos de IA y integración de soluciones ML en aplicaciones reales",
-    "skills.ai.tools": ["TensorFlow", "PyTorch", "OpenAI API"],
+    "skills.ai.tools": [
+      "Generative AI",
+      "Machine Learning",
+      "Deep Leaning",
+      "Python",
+    ],
 
     "skills.cicd.title": "Integración CI/CD",
     "skills.cicd.desc":
@@ -594,7 +610,12 @@ const translations = {
 
     "skills.mobile.title": "تطوير تطبيقات الهاتف",
     "skills.mobile.desc": "تطبيقات React.js حديثة بواجهات جميلة ومتجاوبة",
-    "skills.mobile.tools": ["React Native", "Flutter", "Swift", "Kotlin"],
+    "skills.mobile.tools": [
+      "React Native",
+      "Flutter",
+      "Swift",
+      "Android (Java/Kotlin)",
+    ],
 
     "skills.api.title": "اختبار واجهات API",
     "skills.api.desc": "دورة كاملة لاختبار API من الوظيفي إلى الأمني",
@@ -603,7 +624,12 @@ const translations = {
     "skills.ai.title": "الذكاء الاصطناعي وتعلم الآلة",
     "skills.ai.desc":
       "تطوير نماذج الذكاء الاصطناعي ودمج حلول تعلم الآلة في التطبيقات الواقعية.",
-    "skills.ai.tools": ["TensorFlow", "PyTorch", "OpenAI API"],
+    "skills.ai.tools": [
+      "Generative AI",
+      "Machine Learning",
+      "Deep Leaning",
+      "Python",
+    ],
     "skills.cicd.title": "تكامل CI/CD",
     "skills.cicd.desc": "دمج سلس للاختبارات في خطوط التسليم المستمرة",
     "skills.cicd.tools": [

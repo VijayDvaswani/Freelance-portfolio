@@ -146,19 +146,19 @@ export function Skills() {
               <Card
                 className={`h-full flex flex-col border border-border/40 shadow-xl hover:shadow-2xl transition-all duration-500 group bg-gradient-to-br ${skill.color} ${skill.hoverColor} backdrop-blur-sm rounded-3xl overflow-hidden hover:-translate-y-2`}
               >
-                {/* Enhanced header with better visual separation */}
-                <CardHeader className="pb-5 relative">
-                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
+                {/* Compact header with less vertical space */}
+                <CardHeader className="pb-3 pt-3 relative">
+                  <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
                   <div
-                    className={`flex items-center space-x-5 pt-2 ${spacingClass}`}
+                    className={`flex items-center space-x-4 ${spacingClass}`}
                     dir={dir}
                   >
                     <div
-                      className={`p-4 rounded-2xl bg-background/90 shadow-lg ${skill.iconColor} group-hover:scale-110 transition-all duration-300 border border-border/30`}
+                      className={`p-3 rounded-xl bg-background/90 shadow-md ${skill.iconColor} group-hover:scale-105 transition-all duration-300 border border-border/30`}
                     >
                       {skill.icon}
                     </div>
-                    <CardTitle className="text-2xl font-bold group-hover:text-primary transition-colors duration-300">
+                    <CardTitle className="text-xl font-bold group-hover:text-primary transition-colors duration-300">
                       {skill.title}
                     </CardTitle>
                   </div>
@@ -166,16 +166,16 @@ export function Skills() {
 
                 <div className="px-6 h-px bg-gradient-to-r from-transparent via-border/30 to-transparent"></div>
 
-                <CardContent className="flex flex-col flex-grow py-6">
-                  <CardDescription className="text-muted-foreground mb-6 text-base leading-relaxed group-hover:text-foreground/80 transition-colors duration-300">
+                <CardContent className="flex flex-col flex-grow py-5">
+                  <CardDescription className="text-muted-foreground mb-5 text-base leading-relaxed group-hover:text-foreground/80 transition-colors duration-300">
                     {skill.description}
                   </CardDescription>
 
                   <div className="mt-auto">
-                    <h4 className="text-sm font-semibold text-foreground/90 mb-4 tracking-wide uppercase">
+                    <h4 className="text-sm font-semibold text-foreground/90 mb-3 tracking-wide uppercase">
                       {t("skills.tech")}
                     </h4>
-                    <ul className="space-y-3">
+                    <ul className="space-y-2">
                       {Array.isArray(skill.tools) &&
                         skill.tools.map((tool, toolIndex) => (
                           <li
@@ -185,7 +185,7 @@ export function Skills() {
                           >
                             <span
                               className={`inline-block w-1.5 h-1.5 rounded-full bg-primary/80 ${
-                                dir === "rtl" ? "ml-3" : "mr-3"
+                                dir === "rtl" ? "ml-2" : "mr-2"
                               } flex-shrink-0`}
                             ></span>
                             <span className="text-sm font-medium">{tool}</span>
